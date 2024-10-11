@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'boxicons';
 import {
   Collapse,
   Navbar,
@@ -22,7 +23,7 @@ const CustomNav = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/logout">Logout</NavLink>
+              <NavLink href="/logout">Logout</NavLink>z
             </NavItem>
           </Nav>
         </Collapse>
