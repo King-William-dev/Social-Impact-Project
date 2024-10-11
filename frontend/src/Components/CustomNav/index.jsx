@@ -17,13 +17,18 @@ const CustomNav = () => {
     <div className="custom-nav">
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/" className="me-auto">
-          Edulink App
+          Edulink
         </NavbarBrand>
         <NavbarToggler onClick={toggle} className="me-2" />
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/logout">Logout</NavLink>z
+              
+              <NavLink href="/register">Register</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/login">Login</NavLink>
+
             </NavItem>
           </Nav>
         </Collapse>

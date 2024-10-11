@@ -7,25 +7,36 @@ import './index.css';
 const Home = () => {
   const { username } = userData();
   return (
-    <div >
+    <div>
       <CustomNav />
-      <div className='text-center pt-4 home'>
-        <h2>Home</h2>
+
+      <div className=" text-center pt-4 home">
         <div>
-          <div className='mainDiv'>
-            <img src='https://img.freepik.com/free-photo/schoolchildren-reading-library_1098-4048.jpg' alt='image info' />
+          <div className="mainDiv">
+            <img
+              src="https://img.freepik.com/free-photo/schoolchildren-reading-library_1098-4048.jpg"
+              alt="image info"
+            />
             <h3>Get the best education services now</h3>
           </div>
           <Link to={"/register"}>See All Our Courses</Link>
+          <Link to={'/teacher-dashboard/courses'}>See All Our Courses</Link>
+
         </div>
-        <div className='whoWeAre'>
-          <div className='main'>
+        <div className="whoWeAre">
+          <div className="main">
             <h3>Who we are</h3>
             <div>
               <p>we offer a<br /> community <br /> based reliable and <br /> efficient learning<br /> at your convinience</p>
                 
             </div>
 
+              <p>
+                We offer a<br /> community <br /> based reliable and <br />{' '}
+                efficient learning
+                <br /> at your convinience
+              </p>
+            </div>
           </div>
         </div>
 
@@ -33,13 +44,13 @@ const Home = () => {
       <footer>
         <div>
           <h3>Services</h3>
-          <span>check us</span>
+          <span>Check Us</span>
           <p>Online Teaching</p>
-          <p>Reading Material</p>
+          <p>Reading Materials</p>
         </div>
         <div>
           <h3>Address</h3>
-          <span>contact us</span>
+          <span>Contact Us</span>
           <p>Kampala</p>
           <p>+256787****</p>
         </div>
@@ -50,6 +61,18 @@ const Home = () => {
             <span><box-icon  type="logo" name="facebook-square" ></box-icon></span>
             <span><box-icon  type="logo" name="facebook-square" ></box-icon></span>
             <span><box-icon  type="logo" name="facebook-square" ></box-icon></span>
+          <h3>We are Social</h3>
+          <span>Follow Us</span>
+          <div className="text-center">
+            <span>
+              <box-icon type="logo" name="facebook-circle"></box-icon>
+            </span>
+            <span>
+              <box-icon name="twitter" type="logo"></box-icon>
+            </span>
+            <span>
+              <box-icon name="linkedin" type="logo"></box-icon>
+            </span>
           </div>
         </div>
       </footer>
